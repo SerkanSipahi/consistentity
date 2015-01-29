@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Test Page for Consistentity.js</title>
+	<script src="dist/consistentity.js"></script>
+	<script>
+
+		var entities = [
+				{
+					row : {
+						location : 'Hamburg',
+						foo : {
+							zipcode : '22117',
+							bar : {
+								brand : 'Mercedes'
+							}
+						}
+					}
+				},
+				{
+					row : {
+						location : 'Köln',
+						foo : {
+							zipcode : '33443',
+							bar : {
+								brand : 'VW'
+							}
+						}
+					}
+				},
+				{
+					row : {
+						location : 'München',
+						foo : {
+							zipcode : '88773',
+							bar : {
+								brand : 'BMW'
+							}
+						}
+					}
+				}
+		];
+		var interface = {
+				get location() { 
+					return this.entity.location;
+				},
+				get zipcode() { 
+					return this.entity.foo.zipcode;
+				},
+				get brand() { 
+					return this.entity.foo.bar.brand;
+				},
+		};
+
+		var datas = new Consistentity(interface, entities);
+
+	</script>
+</head>
+	<body>
+		<% datas.foreach(function(row, _){ %>
+			<div>Loation: <%= row.location %></div>
+			<div>Zipcode: <%= row.zipcode %></div>
+			<div>Brand:   <%= row.brand %></div>
+		<% }); %>
+	</body>
+</html>
