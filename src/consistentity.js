@@ -1,17 +1,19 @@
 
 class ConsistEntity {
 	constructor(accessor={}, entities=[{}]){
-        this.entities = [];
-        this.init(entities);
+        this.entities = entities;
+        this.entitiesModels = [];
+        this.init();
 	}
-    init(entities)
-        entities.forEach(function(entity, _){
+    init()
+        this.entities.forEach((entity, _) => {
             ConsistEntityModel.prototype = Object.create(accessor);
-            this.entities.push(new ConsistEntityModel(entity));
+            this.entitiesModels.push(new ConsistEntityModel(entity));
         });
+        this.entities = [{}];
     }
     getEntities(){
-        return this.entities;
+        return this.entitiesModels;
     }
 };
 
