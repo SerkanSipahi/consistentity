@@ -42,15 +42,15 @@
                 }
         ];
 
-        var access = {
+        var accessor = {
                 get location() { 
-                    return this.entity.location;
+                    return this.entity.row.location;
                 },
                 get zipcode() { 
-                    return this.entity.foo.zipcode;
+                    return this.entity.row.foo.zipcode;
                 },
                 get brand() { 
-                    return this.entity.foo.bar.brand;
+                    return this.entity.row.foo.bar.brand;
                 },
         };
 
