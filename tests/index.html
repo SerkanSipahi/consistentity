@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Test Page for Consistentity.js</title>
+	<title>Test Page for ConsistEntity.js</title>
 	<script src="dist/consistentity.js"></script>
 	<script>
 
@@ -38,11 +38,11 @@
 								brand : 'BMW'
 							}
 						}
-					}
+	}
 				}
 		];
-		
-		var interfaces = {
+
+		var access = {
 				get location() { 
 					return this.entity.location;
 				},
@@ -54,7 +54,7 @@
 				},
 		};
 
-		var datas = new Consistentity(interfaces, entities);
+		var datas = new ConsistEntity(accessor, entities);
 
 	</script>
 </head>
