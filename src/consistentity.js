@@ -1,18 +1,18 @@
 
-class ConsistEntity {
-	constructor(accessor={}, entities=[{}]){
+export default class ConsistEntity {
+    constructor(accessor={}, entities=[{}]){
         this.entities = entities;
         this.entitiesModels = [];
         this.init();
-	}
-    init()
+    }
+    init(){
         this.entities.forEach((entity, _) => {
             ConsistEntityModel.prototype = Object.create(accessor);
             this.entitiesModels.push(new ConsistEntityModel(entity));
         });
         this.entities = [{}];
     }
-    getEntities(){
+    getDatas(){
         return this.entitiesModels;
     }
 };
