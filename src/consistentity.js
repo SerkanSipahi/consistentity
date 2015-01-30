@@ -1,3 +1,4 @@
+
 class ConsistEntity {
 	constructor(accessor={}, entities=[{}]){
         this.entities = [];
