@@ -51,5 +51,3 @@ clean-node_modules:
 
 clean-dirs:
 	@rm -rf $(DIRS)
-
-##########################################
