@@ -41,6 +41,7 @@ default:
 ##########################################
 
 build: npm-install create-dirs 6to5
+build-es6: npm-install
 
 ##########################################
 
