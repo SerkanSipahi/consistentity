@@ -37,7 +37,6 @@ export default class ConsistEntity {
         this.tmpEntities = [{}];
     }
     /**
-     * [getDatas description]
      * @return {Object} this.entitiesModels
      */
     getDatas(){
