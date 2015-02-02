@@ -6,7 +6,15 @@
 
 ## Getting Started
 
-This library requires Node.js ~0.10.25 and the npm package-manager ~1.3.0. Please make sure that you have installed Node.js and npm before you run e. g. "make build" ( see below Usage ).
+This library requires Make, Node.js ~0.10.25 and the npm( node-package-manager ) ~1.3.0. Please make sure that you have installed Node.js and npm before you run e. g. "make build"( see below Usage ).
+
+#### Downloads:
+[Node.js](http://nodejs.org/download/),
+[npm](https://www.npmjs.com/package/npm)
+
+#### Note:
+
+If you use the installer( Mac/Windows ) you dont have to install npm( it comes with Node.js now ).
 
 ## Why ConsitEntity?
 
