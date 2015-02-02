@@ -6,7 +6,7 @@
 
 ## Getting Started
 
-This library is written in ECMAScript 6, therefore it requires Node.js ~0.10.25 and the npm( node-package-manager ) ~1.3.0. Please make sure that you have installed Node.js and npm before you run e. g. "make build"( see below Usage ).
+This library is written in ECMAScript 6, therefore it requires Node.js ~0.10.25 and the npm( node-package-manager ) ~1.3.0 for transforming ES6 Code to ES6 if your environment( e. g. Browser ) cant support ES6. Please make sure that you have installed Node.js and npm before you run e. g. "make build"( see below Usage ).
 
 #### Downloads:
 [Node.js](http://nodejs.org/download/),
