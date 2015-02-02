@@ -6,7 +6,15 @@
 
 ## Getting Started
 
+This library requires Node.js ~0.10.25 and the npm package-manager ~1.3.0. Please make sure that you have installed Node.js and npm before you run e. g. "make build" ( see below Usage ).
+
+## Why ConsitEntity
+
 ...
+...
+
+## Usage
+
 ...
 ...
 
