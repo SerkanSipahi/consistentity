@@ -30,6 +30,7 @@ If you use the installer( Mac/Windows ) you dont have to install npm( it comes w
 ## Todos
 
 * minifyjs
+* sourcemap inline, file
 * gh-pages
 * traceur support
 * 6to5, done
