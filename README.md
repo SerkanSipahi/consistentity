@@ -17,10 +17,54 @@ If you use the installer( Mac/Windows ) you dont have to install npm( it comes w
 [Node.js](http://nodejs.org/download/),
 [npm](https://www.npmjs.com/package/npm)
 
-## Why ConsitEntity?
+## Why ConsitEntity? See below common situation!
 
-...
-...
+### Your entities from anywhere( Database, etc. )
+```js
+
+var entities = [
+        {
+            row : {
+                location : 'Hamburg',
+                foo : {
+                    zipcode : '22117',
+                    bar : {
+                        brand : 'Mercedes'
+                    }
+                }
+            }
+        },
+        {
+            row : {
+                location : 'Köln',
+                foo : {
+                    zipcode : '33443',
+                    bar : {
+                        brand : 'VW'
+                    }
+                }
+            }
+        },
+        {
+            row : {
+                location : 'München',
+                foo : {
+                    zipcode : '88773',
+                    bar : {
+                        brand : 'BMW'
+                    }
+                }
+            }
+        },
+        ...,
+        ...,
+        ...,
+        ...,
+        ...,
+        ...,
+];
+
+```
 
 ## Usage
 
