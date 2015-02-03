@@ -21,7 +21,7 @@ If you use the installer( Mac/Windows ) you dont have to install npm( it comes w
 
 ## Why ConsitEntity? See below common situation!
 
-#### Your entities from somewhere( Database, etc. )
+#### Entities from somewhere( Database, etc. )
 ```js
 
 var entities = [
@@ -65,6 +65,54 @@ var entities = [
         ...,
         ...,
 ];
+
+```
+
+#### Many templates that use the same entities
+```html
+
+// advertising.handlebars
+<div class="ad">
+    {{#each entities}}
+    <div class="ad-location">Location: {{row.location}}</div>
+    <div class="ad-zip">Zipcode: {{row.foo.zipcode}}</div>
+    <div class="ad-brand">Brand: {{row.foo.bar.brand}}</div>
+    {{/each}}
+</div>
+
+// results.handlebars
+<div class="results">
+    {{#each entities}}
+    <div class="item-wrapper">
+        <div class="col-xs-4">
+            <div class="res-location">Location: {{row.location}}</div>
+        </div>
+        <div class="col-xs-4">
+            <div class="res-zip">Zipcode: {{row.foo.zipcode}}</div>
+        </div>
+        <div class="col-xs-4">
+            <div class="res-brand">Brand: {{row.foo.bar.brand}}</div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+// product.handlebars
+<div class="product">
+    {{#each entities}}
+    <div class="teaser">
+        <img src="path/to/brandimages/{{row.foo.bar.brand}}.jpg" />
+        <div class="product-brand">{{row.foo.bar.brand}}</div>
+    </div>
+    <div class="product-location">{{row.location}}</div>
+    <div class="product-zip">{{row.foo.zipcode}}</div>
+    {{/each}}
+</div>
+
+// and many other templates
+...
+...
+...
 
 ```
 
