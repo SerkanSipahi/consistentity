@@ -44,7 +44,8 @@ make build module=<name>
   @default:
    - module=ignore
 
-make build
+make build                build ES6 to ES5
+make build-es6            build no converting
 make tests                run tests
 make create-dirs          create dist directory
 make npm-install          install npm node modules
