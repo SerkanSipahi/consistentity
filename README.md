@@ -19,7 +19,7 @@ If you use the installer( Mac/Windows ) you dont have to install npm( it comes w
 
 ## Why ConsitEntity? See below common situation!
 
-### Your entities from anywhere( Database, etc. )
+#### Your entities from anywhere( Database, etc. )
 ```js
 
 var entities = [
@@ -107,7 +107,8 @@ make clean-dirs           remove dist directory
 * sourcemap inline, file
 * gh-pages
 * traceur support
-* 6to5, done
+* 6to5, done,
+* constributors welcome
 
 ## Maintainers
 
