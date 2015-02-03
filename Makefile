@@ -28,6 +28,8 @@ default:
 	@echo "      @default:"
 	@echo "       - module=ignore"
 	@echo ""
+	@echo "   make build                build ES6 to ES5"
+	@echo "   make build-es6            build no converting" 
 	@echo "   make tests                run tests"
 	@echo "   make create-dirs          create dist directory"
 	@echo "   make npm-install          install npm node modules"
