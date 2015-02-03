@@ -21,7 +21,7 @@ If you use the installer( Mac/Windows ) you dont have to install npm( it comes w
 
 ## Why ConsitEntity? See below common situation!
 
-#### Your entities from anywhere( Database, etc. )
+#### Your entities from somewhere( Database, etc. )
 ```js
 
 var entities = [
