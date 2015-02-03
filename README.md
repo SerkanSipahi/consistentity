@@ -16,7 +16,7 @@ If you use the installer( Mac/Windows ) you dont have to install npm( it comes w
 
 #### Downloads:
 
-* [Node.js](http://nodejs.org/download/),
+* [Node.js](http://nodejs.org/download/)
 * [npm](https://www.npmjs.com/package/npm)
 
 ## Why ConsitEntity? See below common situation!
