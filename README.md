@@ -22,9 +22,9 @@ If you use the installer( Mac/Windows ) you dont have to install npm( it comes w
 #### Install ConsistEntity with this command(s):
 
 ```shell
-// this transform ES6 Code to ES5 without any module dependency!
+// this command transform ES6 Code to ES5 without any module dependency!
 make build
-// this command is equivalent to "make build":
+// this command is equivalent to "make build"
 make build module=ignore
 
 // following modules are supported:
@@ -43,9 +43,15 @@ make build module=<name>
 
 ```
 
-#### If the build was successful you will find the library:
+#### If the build was successful you will find the library in:
 ```js
 dist/consistentity.js
+```
+
+#### Test your build in the Browser:
+Note: before you run the test please open `http://localhost:9876` in your Browser
+```js
+make test
 ```
 
 ## Why ConsitEntity? See below common situation!
