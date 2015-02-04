@@ -19,9 +19,15 @@ If you use the installer( Mac/Windows ) you dont have to install npm( it comes w
 * [Node.js](http://nodejs.org/download/)
 * [npm](https://www.npmjs.com/package/npm)
 
+#### Install consistentity.js
+
+```shell
+make build
+```
+
 ## Why ConsitEntity? See below common situation!
 
-#### Entities from somewhere( Database, etc. )
+##### Entities from somewhere( Database, etc. )
 ```js
 
 var entities = [
@@ -68,7 +74,7 @@ var entities = [
 
 ```
 
-#### Many templates that use the same entities
+##### Many templates that use the same entities
 ```html
 
 // advertising.handlebars
