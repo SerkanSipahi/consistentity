@@ -146,36 +146,6 @@ var entities = [
 ...
 ...
 
-## Available Make Targets
-
-```make
-   
-make build module=<name>
-  @modules:
-   - amd
-   - amdStrict
-   - common
-   - commonStrict
-   - ignore
-   - system
-   - umd
-   - umdStrict
-  @default:
-   - module=ignore
-
-make build                build ES6 to ES5
-make build-es6            build no converting
-make tests                run tests
-make create-dirs          create dist directory
-make npm-install          install npm node modules
-make watch                trigger build target on change any files
-make 6to5                 compile consistenty.js from es6 to es5
-make clean                trigger clean-node_moudles + clean-dirs targets
-make clean-node_moudles   remove node_modules directory
-make clean-dirs           remove dist directory
-
-```
-
 ## Todos
 
 * minifyjs
