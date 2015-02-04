@@ -8,7 +8,7 @@
  
 ## Getting Started
 
-This library is written in ECMAScript 6, therefore it requires Node.js >=0.10.00 and the npm( node-package-manager ) >=1.3.0 for transforming ES6 Code to ES5. Please make sure that you have installed Node.js and npm before you run e. g. "make build"( Install ). You also need [make](http://goo.gl/i5CuuV) which is already available on Linux and MacOS.
+This library is written in ECMAScript 6, therefore it requires Node.js >=0.10 and the npm( node-package-manager ) >=1.3 for transforming ES6 Code to ES5. Please make sure that you have installed Node.js and npm before you run e. g. "make build"( see below Install ). You also need [make](http://goo.gl/i5CuuV) which is already available on Linux and MacOS.
 
 #### Info:
 
@@ -166,6 +166,8 @@ var entities = [
 ...
 
 ```
+
+
 
 ## Usage
 
