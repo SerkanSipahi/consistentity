@@ -212,7 +212,7 @@ var entities = [
         ...,
 ];
 
-// control your entities at one point
+// control and/or manipulate your entity at one point
 var accessor = {
         get location() { 
             return this.entity.row.location;
@@ -221,7 +221,8 @@ var accessor = {
             return this.entity.row.foo.zipcode;
         },
         get brand() { 
-            return this.entity.row.foo.bar.brand;
+            var brand = this.entity.row.foo.bar.brand;
+            return '*** '+ brand.toUpperCase() + ' ***';
         }
 };
 

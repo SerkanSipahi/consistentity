@@ -48,6 +48,6 @@ export default class ConsistEntity {
  * @param {Object} entitiy
  * @return {Instance} of ConsistEntityModel
  */
-function ConsistEntityModel(entity){
-    this.entity = entity || {};
+function ConsistEntityModel(entity = {}){
+    this.entity = entity;
 }
