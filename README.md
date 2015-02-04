@@ -28,7 +28,6 @@ make build
 make build module=ignore
 
 // following modules are supported:
-
 make build module=<name>
   @modules:
    - amd
