@@ -19,10 +19,26 @@ If you use the installer( Mac/Windows ) you dont have to install npm( it comes w
 * [Node.js](http://nodejs.org/download/)
 * [npm](https://www.npmjs.com/package/npm)
 
-#### Install consistentity.js
+#### Install ConsistEntity with this command:
 
 ```shell
 make build
+
+// or 
+
+make build module=<name>
+  @modules:
+   - amd
+   - amdStrict
+   - common
+   - commonStrict
+   - ignore
+   - system
+   - umd
+   - umdStrict
+  @default:
+   - module=ignore
+
 ```
 
 ## Why ConsitEntity? See below common situation!
