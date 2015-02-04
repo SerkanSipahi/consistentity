@@ -27,7 +27,7 @@ make build
 // this command is equivalent to "make build":
 make build module=ignore
 
-// or 
+// following modules are supported:
 
 make build module=<name>
   @modules:
