@@ -43,10 +43,10 @@ make build module=<name>
 
 ```
 
-#### If the build was successful you will find the build:
+#### If the build was successful you will find the library:
 ```js
 dist/consistentity.js
-````
+```
 
 ## Why ConsitEntity? See below common situation!
 
