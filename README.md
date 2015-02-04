@@ -54,6 +54,9 @@ Note: before you run the test please open `http://localhost:9876` in your Browse
 make test
 ```
 
+#### ConsistEntity is well tested in:
+* Chrome, Firefox, Safari, Opera, IE10, IE11
+
 ## Why ConsitEntity? See below common situation!
 
 ##### Entities from somewhere( Database, etc. )
