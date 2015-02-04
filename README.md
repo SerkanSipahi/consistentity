@@ -19,10 +19,13 @@ If you use the installer( Mac/Windows ) you dont have to install npm( it comes w
 * [Node.js](http://nodejs.org/download/)
 * [npm](https://www.npmjs.com/package/npm)
 
-#### Install ConsistEntity with this command:
+#### Install ConsistEntity with this command(s):
 
 ```shell
+// its transform ES6 Code to ES5 without any module dependency!
 make build
+// this command is equivalent to "make build":
+make build module=ignore
 
 // or 
 
