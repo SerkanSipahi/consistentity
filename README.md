@@ -43,7 +43,10 @@ make build module=<name>
 
 ```
 
-If the build was successful you will find the build in `dist/consistentity.js` directory
+#### If the build was successful you will find the build:
+```js
+dist/consistentity.js
+````
 
 ## Why ConsitEntity? See below common situation!
 
