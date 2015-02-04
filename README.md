@@ -167,16 +167,116 @@ var entities = [
 
 ```
 
-But why is that not maintainable? Well, the answer is very simple! If your entities struct are changed then you have to correct it in all template files. Thats why you have to use `ConsistEntity`:
+But why is that( see below common situation ) not maintainable? Well, the answer is very simple! If your entities struct are changed then you have to correct it in all template files. 
+
+#### Thats why you have to use `ConsistEntity`:
 
 ```js
-...
+var entities = [
+        {
+            row : {
+                location : 'Hamburg',
+                foo : {
+                    zipcode : '22117',
+                    bar : {
+                        brand : 'Mercedes'
+                    }
+                }
+            }
+        },
+        {
+            row : {
+                location : 'Köln',
+                foo : {
+                    zipcode : '33443',
+                    bar : {
+                        brand : 'VW'
+                    }
+                }
+            }
+        },
+        {
+            row : {
+                location : 'München',
+                foo : {
+                    zipcode : '88773',
+                    bar : {
+                        brand : 'BMW'
+                    }
+                }
+            }
+        },
+        ...,
+        ...,
+        ...,
+        ...,
+        ...,
+        ...,
+];
+
+// control your entities at one point
+var accessor = {
+        get location() { 
+            return this.entity.row.location;
+        },
+        get zipcode() { 
+            return this.entity.row.foo.zipcode;
+        },
+        get brand() { 
+            return this.entity.row.foo.bar.brand;
+        }
+};
+
+var entities = (new ConsistEntity(accessor, entities)).getDatas();
+
 ``` 
 
-## Usage
+```html
 
+// advertising.handlebars
+<div class="ad">
+    {{#each entities}}
+    <div class="ad-location">Location: {{row.location}}</div>
+    <div class="ad-zip">Zipcode: {{row.zipcode}}</div>
+    <div class="ad-brand">Brand: {{row.brand}}</div>
+    {{/each}}
+</div>
+
+// results.handlebars
+<div class="results">
+    {{#each entities}}
+    <div class="item-wrapper">
+        <div class="col-xs-4">
+            <div class="res-location">Location: {{row.location}}</div>
+        </div>
+        <div class="col-xs-4">
+            <div class="res-zip">Zipcode: {{row.zipcode}}</div>
+        </div>
+        <div class="col-xs-4">
+            <div class="res-brand">Brand: {{row.brand}}</div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+// product.handlebars
+<div class="product">
+    {{#each entities}}
+    <div class="teaser">
+        <img src="path/to/brandimages/{{row.brand}}.jpg" />
+        <div class="product-brand">{{row.brand}}</div>
+    </div>
+    <div class="product-location">{{row.location}}</div>
+    <div class="product-zip">{{row.zipcode}}</div>
+    {{/each}}
+</div>
+
+// and many other templates
 ...
 ...
+...
+
+```
 
 ## Todos
 
