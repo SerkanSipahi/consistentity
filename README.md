@@ -12,7 +12,7 @@ This library is written in ECMAScript 6, therefore it requires Node.js >=0.10.00
 
 #### Info:
 
-If you use the installer( Mac/Windows ) you dont have to install npm( it comes with Node.js now ).
+If you use the installer, npm comes with Node.js now
 
 #### Downloads:
 
