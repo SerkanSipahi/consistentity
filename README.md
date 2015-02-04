@@ -167,7 +167,7 @@ var entities = [
 
 ```
 
-But why is it not maintainable? Well, the answer is very simple! If your entities struct are changed then you have to correct in all template files. Thats why you have to use `ConsistEntity`:
+But why is that not maintainable? Well, the answer is very simple! If your entities struct are changed then you have to correct it in all template files. Thats why you have to use `ConsistEntity`:
 
 ```js
 ...
