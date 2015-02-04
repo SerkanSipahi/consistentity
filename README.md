@@ -48,6 +48,19 @@ make build module=<name>
 dist/consistentity.js
 ```
 
+#### Then add the library:
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="path/to/lib/consistentity.js"></script>
+    </head>
+    <body>
+        Content of the document......
+    </body>
+</html
+```
+
 #### Test your build in the Browser:
 Note: before you run the test please open `http://localhost:9876` in your Browser
 ```js
