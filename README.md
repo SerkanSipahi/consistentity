@@ -43,6 +43,8 @@ make build module=<name>
 
 ```
 
+If the build was successful you will find the build in `dist/consistentity.js` directory
+
 ## Why ConsitEntity? See below common situation!
 
 ##### Entities from somewhere( Database, etc. )
