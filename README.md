@@ -1,5 +1,3 @@
-### @Documentation in progress
-
 ## ConsistEntity
 [![npm](https://img.shields.io/npm/v/consistentity.svg?style=flat)](https://www.npmjs.com/package/consistentity)
 [![devDependency Status](https://david-dm.org/SerkanSipahi/consistentity/dev-status.svg)](https://david-dm.org/SerkanSipahi/consistentity#info=devDependencies)
@@ -169,7 +167,7 @@ var entities = [
 
 But why is that( see below common situation ) not maintainable? Well, the answer is very simple! If your entities struct are changed then you have to correct it in all template files. 
 
-#### Thats why you have to use `ConsistEntity`:
+#### Thats why you have to use ConsistEntity:
 
 ```js
 var entities = [
