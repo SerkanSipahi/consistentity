@@ -46,7 +46,9 @@ make build module=<name>
 dist/consistentity.js
 ```
 
-#### Then add the library:
+#### Useage:
+
+on default
 ```html
 <!DOCTYPE html>
 <html>
