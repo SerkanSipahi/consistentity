@@ -46,9 +46,7 @@ make build module=<name>
 dist/consistentity.js
 ```
 
-#### Useage:
-
-on default
+#### Then add the library:
 ```html
 <!DOCTYPE html>
 <html>
@@ -58,7 +56,7 @@ on default
     <body>
         Content of the document......
     </body>
-</html
+</html>
 ```
 
 #### Test your build in the Browser:
