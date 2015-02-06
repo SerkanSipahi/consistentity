@@ -1,6 +1,6 @@
 {
   "name": "consistentity",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "Maintain your Datas/Entities at one point and manipulate it( encapsulated ) at one point",
   "keywords": [
     "consist",
@@ -30,7 +30,9 @@
     "karma": "0.12.31",
     "karma-jasmine": "0.3.5"
   },
-  "licenses": [{
+  "licenses": [
+    {
       "type": "MIT"
-  }]
+    }
+  ]
 }
