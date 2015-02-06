@@ -284,6 +284,7 @@ var entities = (new ConsistEntity(accessor, entities)).getDatas();
 * gh-pages
 * traceur support
 * 6to5, done,
+* https://coveralls.io
 * constributors welcome
 
 ## Maintainers
