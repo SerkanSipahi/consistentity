@@ -48,7 +48,7 @@ build-es6: npm-install
 ##########################################
 
 npm-install:
-	@npm install
+	@npm i
 
 create-dirs:
 	@mkdir $(dirs)
