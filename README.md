@@ -46,7 +46,12 @@ make build module=<name>
 dist/consistentity.js
 ```
 
-#### Then add the library:
+##### Implementation and building for Browser
+
+```make
+make build
+```
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -58,6 +63,50 @@ dist/consistentity.js
     </body>
 </html>
 ```
+
+##### Implementation and building for AMD
+
+```make
+make build module=amd
+```
+
+```js
+requre(['consistentity'], function(Consistentity){
+    ...
+    ...
+});
+```
+
+##### Implementation and building for commonjs
+
+```make
+make build module=common
+```
+
+```js
+var Consistentity = require('consistentity');
+...
+...
+```
+
+##### Implementation and building for systemjs
+
+```make
+make build module=common
+```
+
+```js
+import BaseComponent from 'consistentity';
+
+// or
+
+System.import('consistentity').then(function(Consistentity) {
+    ...
+    ...
+});
+
+```
+
 
 #### Test your build in the Browser:
 Note: before you run the test please open `http://localhost:9876` in your Browser
@@ -278,12 +327,6 @@ var entities = (new ConsistEntity(accessor, entities)).getDatas();
 ```
 
 ## Todos
-
-* minifyjs
-* sourcemap inline, file
-* gh-pages
-* traceur support
-* 6to5, done,
 * https://coveralls.io
 * constributors welcome
 
