@@ -1,6 +1,6 @@
 {
   "name": "consistentity",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "Maintain your Datas/Entities at one point and manipulate it( encapsulated ) at one point",
   "keywords": [
     "consist",
