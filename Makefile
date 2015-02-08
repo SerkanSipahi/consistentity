@@ -54,8 +54,8 @@ create-dirs:
 	@mkdir $(dirs)
 
 6to5:
-	$(6to5_bin) -c -e -t $(6to5_watch) src/consistentity.js -o dist/consistentity.js -m $(module) & \
-	$(6to5_bin) -e -t $(6to5_watch) src/karma.conf.js -o dist/karma.conf.js -m common
+	$(6to5_bin) -c -e -s $(6to5_watch) src/consistentity.js -o dist/consistentity.js -m $(module) & \
+	$(6to5_bin) -e -s $(6to5_watch) src/karma.conf.js -o dist/karma.conf.js -m common
 
 test:
 	$(karma_bin) start $(karma_config) & $(karma_bin) run
