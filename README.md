@@ -71,7 +71,7 @@ make build module=amd
 ```
 
 ```js
-requre(['consistentity'], function(Consistentity){
+require(['consistentity'], function(Consistentity){
     ...
     ...
 });
