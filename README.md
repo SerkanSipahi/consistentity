@@ -92,7 +92,7 @@ var Consistentity = require('consistentity');
 ##### Implementation and building for systemjs
 
 ```make
-make build module=common
+make build module=system
 ```
 
 ```js
